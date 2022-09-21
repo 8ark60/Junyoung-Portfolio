@@ -7,7 +7,7 @@
     --color-black: #000;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
-    
+
     /* Font Size */
     --font-large: 48px;
     --font-medium: 28px;
@@ -19,6 +19,8 @@
     --weight-bold: 700;
     --weight-semi-bold: 600;
     --weight-regular: 400;
+    --weight-kr-bold: 700;
+    --weight-kr-regular: 400;
 
     /* Size */
 }
