@@ -262,9 +262,7 @@ p {
 
 /* Skills */
 #skills {
-    background-image: url(images/background-red.png);
-    background-repeat: no-repeat;
-    background-size: 120%;
+    background: url(images/home-background.png) no-repeat center/170%;
     color: var(--color-white);
 }
 
@@ -278,8 +276,8 @@ p {
 
 .skillset {
     text-align: left;
-    margin: 40px 0;
-    width: 60%;
+    margin: 30px 0;
+    width: 100%;
 }
 
 .skillset p {
@@ -313,5 +311,54 @@ p {
     background: linear-gradient(#9795ef,#f9c5d1);
 }
 
+/* Projects */
 
+/* Testimonials */
+#testimonial {
+    background: url(images/home-background.png) no-repeat center/160%;
+}
+
+#testimonial h1,
+#testimonial h3 {
+    color: var(--color-white);
+}
+
+.testimonials {
+    margin: 40px;
+}
+
+.testimonial {
+    display: flex;
+    margin: 32px 0;
+}
+
+.testimonial__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+    margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+    padding: 18px;
+    background-color: var(--color-dark-white);
+    border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble .name {
+    margin-top: 22px;
+}
+
+.testimonial__speech-bubble a {
+    color: var(--color-red);
+}
+
+/* Contact */
 
