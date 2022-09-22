@@ -361,4 +361,40 @@ p {
 }
 
 /* Contact */
+.contact__email,
+.contact__phone {
+    font-size: var(--font-regular);
+}
 
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px;
+}
+
+.contact__links i {
+    color: var(--color-blue);
+    transition: all 300ms;
+}
+
+.contact__links i:hover {
+    color: var(--color-red);
+    transform: scale(1.1);
+}
+
+.contact__description {
+    font-size: var(--font-regular);
+    color: var(--color-grey);
+    font-weight: var(--weight-bold);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-black);
+    text-align: right;
+}
+
+footer p {
+    color: var(--color-white);
+    font-size: var(--font-micro);
+    font-weight: var(--weight-semi-bold);
+}
