@@ -121,6 +121,12 @@ p {
     color: var(--color-black);
 }
 
+.navbar__toggle-btn {
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
 /* Home */
 #home {
     background: url(images/home-background.png) center/cover no-repeat;
@@ -167,6 +173,11 @@ p {
 }
 
 /* About */
+.about__img {
+    position: absolute;
+    left: 30%;
+}
+
 .about__description {
     font-weight: var(--weight-bold);
     color: var(--color-grey);
@@ -497,4 +508,101 @@ footer p {
     font-size: var(--font-micro);
     font-weight: var(--weight-semi-bold);
     padding: 12px 8px;
+}
+
+/* Moblie 768px 반응형 */
+@media screen and (max-width: 768px) {
+    .navbar__logo {
+        font-size: var(--font-small);
+    }
+
+    .navbar__toggle-btn {
+        display: block;
+    }
+
+    #navbar {
+        padding: 16px;
+        align-items: center;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .home__description {
+        font-size: var(--font-small);
+    }
+
+    .about__img {
+        display: none;
+    }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    #skills {
+        background-size: cover;
+    }
+
+    .skillset {
+        padding: 0;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+
+    .projects__categories {
+        width: 100%;
+        margin: auto;
+    }
+
+    .category__btn {
+        width: 100%;
+        margin: 4px 0;
+    }
+
+    #testimonial {
+        background-size: cover;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial__avatar:nth-child(even) {
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    
+    #testimonial .section__container {
+        margin: 0;
+    }
+
+    .testimonial__speech-bubble {
+        width: 100%;
+    }
+
+    .testimonial:nth-child(2) img {
+        order: 2;
+    }
+
+    .testimonial__avatar:nth-child(odd) {
+        margin-right: 0px;
+        margin-top: 12px;
+    }
+
+    footer {
+        text-align: center;
+    }
 }

@@ -28,6 +28,11 @@
             <li class="navbar__item">Testimonial</li>
             <li class="navbar__item">Contact</li>
         </ul>
+
+        <!-- toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
     <!-- Home -->
     <section id="home">
@@ -41,6 +46,7 @@
     <section id="about" class="section section__container">
         <h1>About me</h1>
         <p class="about__description">1996.08.22</p>
+        <img src="images/avatar1.png" alt="내 사진" width="100px" class="about__img">
         <h3 class="about__sub-description">Web-Publisher <br>Markup Developer <br>박준영 Portfolio</h3>
         <a href="#" download="이력서_박준영" class="about__down">DOWNLOAD RESUME</a>
         <!-- 이력서 다운로드 -->
@@ -147,79 +153,81 @@
     </section>
     <!-- Projects -->
     <section id="projects" class="section">
-        <h1>Projects</h1>
-        <p>My work</p>
-        <div class="projects__categories">
-            <button class="category__btn active">All<span class="category__count">8</span></button>
-            <button class="category__btn">Clone-coding<span class="category__count">3</span></button>
-            <button class="category__btn">PSD-uses<span class="category__count">3</span></button>
-            <button class="category__btn">etc<span class="category__count">2</span></button>
-        </div>
-        <div class="work__projects">
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project1.png" alt="project1" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project2.png" alt="project2" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project3.png" alt="project3" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project4.png" alt="project4" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project5.png" alt="project5" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project6.png" alt="project6" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project7.png" alt="project7" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
-            <a href="" class="project" target="_blank">
-                <img src="images/projects/project8.png" alt="project8" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <p>Clone-coding</p>
-                    <span>사용기술 : HTML5, CSS3</span>
-                </div>
-            </a>
+        <div class="section__container">
+            <h1>Projects</h1>
+            <p>My work</p>
+            <div class="projects__categories">
+                <button class="category__btn active">All<span class="category__count">8</span></button>
+                <button class="category__btn">Clone-coding<span class="category__count">3</span></button>
+                <button class="category__btn">PSD-uses<span class="category__count">3</span></button>
+                <button class="category__btn">etc<span class="category__count">2</span></button>
+            </div>
+            <div class="work__projects">
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project1.png" alt="project1" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project2.png" alt="project2" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project3.png" alt="project3" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project4.png" alt="project4" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project5.png" alt="project5" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project6.png" alt="project6" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project7.png" alt="project7" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+                <a href="" class="project" target="_blank">
+                    <img src="images/projects/project8.png" alt="project8" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <p>Clone-coding</p>
+                        <span>사용기술 : HTML5, CSS3</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
     <!-- Testimonial -->
