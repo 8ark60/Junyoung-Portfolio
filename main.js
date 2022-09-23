@@ -23,6 +23,16 @@ navbarMenu.addEventListener('click', function(event){
     if (link == null){
         return;
     }
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({ behavior: 'smooth' });
+    scrollIntoView(link);
 });
+
+// Home Contact me 클릭 시 contact 이동
+const contactMe = document.querySelector('.home__contact');
+contactMe.addEventListener('click', function(){
+    scrollIntoView('#contact')
+});
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
