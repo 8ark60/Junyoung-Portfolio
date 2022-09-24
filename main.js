@@ -24,6 +24,8 @@ navbarMenu.addEventListener('click', function(event){
         return;
     }
     scrollIntoView(link);
+    // const scrollTo = document.querySelector(link);
+    // scrollTo.scrollIntoView({ behavior: 'smooth' });
 });
 
 // Home Contact me 클릭 시 contact 이동
@@ -36,3 +38,19 @@ function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
+
+// 스크롤 시 up버튼 생성
+const arrowUp = document.querySelector('.arrow-up');
+const homeHeight = document.querySelector('#home').getBoundingClientRect().height
+document.addEventListener('scroll', function(){
+    if(window.scrollY > homeHeight / 2){
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// up버튼 클릭 시 맨 위로
+arrowUp.addEventListener('click', function(){
+    scrollIntoView('#home');   
+});
