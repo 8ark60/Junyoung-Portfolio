@@ -54,3 +54,5 @@ document.addEventListener('scroll', function(){
 arrowUp.addEventListener('click', function(){
     scrollIntoView('#home');   
 });
+
+// project 
