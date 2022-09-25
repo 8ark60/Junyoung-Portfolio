@@ -165,6 +165,7 @@ p {
     color: var(--color-white);
 }
 
+
 /* section common */
 .section {
     padding: 50px;
@@ -524,6 +525,7 @@ footer p {
     font-size: var(--font-micro);
     font-weight: var(--weight-semi-bold);
     padding: 12px 8px;
+    margin: 0;
 }
 
 /* up button */
@@ -611,7 +613,7 @@ footer p {
 
     .projects__categories {
         width: 100%;
-        margin: auto;
+        margin: 8px auto;
     }
 
     .category__btn {
@@ -652,5 +654,9 @@ footer p {
 
     footer {
         text-align: center;
+    }
+
+    .arrow-up {
+        right: 20px;
     }
 }

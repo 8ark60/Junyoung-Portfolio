@@ -34,7 +34,7 @@ navbarMenu.addEventListener('click', function(event){
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', function(){
     navbarMenu.classList.toggle('open');
-    document.querySelector('.navbar__logo').classList.add('hide');
+    document.querySelector('.navbar__logo').classList.toggle('hide');
 });
 
 
