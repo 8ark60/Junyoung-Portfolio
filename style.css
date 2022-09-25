@@ -120,10 +120,6 @@ p {
     border-radius: var(--size-border-radius);
 }
 
-.navbar__item.active {
-    border: 1px solid var(--color-white);
-}
-
 .navbar__item:hover {
     background-color: var(--color-white);
     color: var(--color-black);
@@ -345,13 +341,13 @@ p {
     padding: 8px 38px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
     background-color: var(--color-blue);
     color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
     opacity: 1;
     top: 0;
