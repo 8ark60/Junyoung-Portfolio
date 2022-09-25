@@ -56,3 +56,26 @@ arrowUp.addEventListener('click', function(){
 });
 
 // project 
+const projectBtnContainer = document.querySelector('.projects__categories');
+const workContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+projectBtnContainer.addEventListener('click', function(e){
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+    workContainer.classList.add('anim-out');
+    setTimeout(function(){
+        projects.forEach(function(project){
+            if(filter === '*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+        workContainer.classList.remove('anim-out');
+    },300);
+
+    console.log(filter);
+});
