@@ -23,10 +23,20 @@ navbarMenu.addEventListener('click', function(event){
     if (link == null){
         return;
     }
+    navbarMenu.classList.remove('open');
+    document.querySelector('.navbar__logo').classList.remove('hide');
     scrollIntoView(link);
     // const scrollTo = document.querySelector(link);
     // scrollTo.scrollIntoView({ behavior: 'smooth' });
 });
+
+// Navbar toggle button
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', function(){
+    navbarMenu.classList.toggle('open');
+    document.querySelector('.navbar__logo').classList.add('hide');
+});
+
 
 // Home Contact me 클릭 시 contact 이동
 const contactMe = document.querySelector('.home__contact');

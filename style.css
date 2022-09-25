@@ -552,6 +552,11 @@ footer p {
 @media screen and (max-width: 768px) {
     .navbar__logo {
         font-size: var(--font-small);
+        display: block;
+    }
+
+    .navbar__logo.hide {
+        display: none;
     }
 
     .navbar__toggle-btn {
@@ -561,6 +566,7 @@ footer p {
     #navbar {
         padding: 16px;
         align-items: center;
+        background-color: var(--color-black);
     }
 
     .navbar__menu {
@@ -568,6 +574,10 @@ footer p {
         text-align: center;
         width: 100%;
         display: none;
+    }
+
+    .navbar__menu.open {
+        display: block;
     }
 
     .home__description {
